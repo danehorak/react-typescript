@@ -1,0 +1,50 @@
+{
+  "name": "cue-temp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@tanstack/react-query": "^4.36.1",
+    "@types/busboy": "^1.5.1",
+    "@types/express": "^4.17.18",
+    "@types/node": "^16.18.58",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.11",
+    "antd": "^5.9.4",
+    "busboy": "^1.6.0",
+    "concurrently": "^8.2.1",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start:front-end": "react-scripts start",
+    "start:back-end": "ts-node src/api/server/index.ts",
+    "start": "concurrently \"npm run start:back-end\" \"npm run start:front-end\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
